@@ -46,7 +46,6 @@ Argentina | 0.09
 
 ## Project Structure
 
-project_1/  
 simulator.py – core simulation engine  
 run_forecast.py – execution script  
 matches.csv – input dataset containing match probabilities and Elo ratings  
