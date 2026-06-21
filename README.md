@@ -34,15 +34,15 @@ The full tournament is simulated N times (e.g., 1,000 to 100,000 iterations). Th
 
 ## Output
 
-The model produces a ranked table of teams with estimated win probabilities:
+The model produces a ranked table of teams with estimated win probabilities. For example:
 
 Team | Win Probability
 -----|----------------
-Brazil | 0.30
-Germany | 0.16
-Spain | 0.13
-France | 0.12
-Argentina | 0.09
+Spain | 0.30
+France | 0.16
+Argentina | 0.13
+Germany | 0.12
+Brazil | 0.09
 
 ## Project Structure
 
@@ -52,30 +52,6 @@ matches.csv – input dataset containing match probabilities and Elo ratings
 requirements.txt – dependencies  
 .gitignore – ignored files configuration  
 README.md – project documentation  
-
-## How to Run
-
-### 1. Clone the repository
-git clone <your-repo-url>  
-cd project_1  
-
-### 2. Create virtual environment
-python -m venv venv  
-source venv/bin/activate (macOS/Linux)  
-
-### 3. Install dependencies
-pip install -r requirements.txt  
-
-### 4. Run simulation
-python run_forecast.py  
-
-## Configuration
-
-The number of simulations can be adjusted in `run_forecast.py`:
-
-sim.run_simulations(n=10000)
-
-Increasing n improves stability of results but increases runtime.
 
 ## Assumptions
 
@@ -98,17 +74,3 @@ Increasing n improves stability of results but increases runtime.
 - Calibrate probabilities using historical datasets
 - Add visualization dashboard (e.g., Streamlit)
 - Parallelize Monte Carlo simulation for performance gains
-
-## Requirements
-
-Python 3.9+  
-numpy  
-pandas  
-
-Install dependencies:
-
-pip install numpy pandas
-
-## Author
-
-This project was built as a Monte Carlo simulation for sports outcome forecasting and applied data science practice.
